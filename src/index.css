@@ -4,7 +4,7 @@
 
 @layer utilities {
   .glass-panel {
-    @apply bg-panelBg backdrop-blur-md border border-panelBorder shadow-[0_4px_30px_rgba(0, 0, 0, 0.1)];
+    @apply bg-panelBg backdrop-blur-md border border-panelBorder shadow-[0_4px_30px_rgba(0,0,0,0.1)];
   }
 }
 
