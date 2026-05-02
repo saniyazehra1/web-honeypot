@@ -45,10 +45,10 @@ export default function About() {
       <div className="w-full max-w-5xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamData.map((member, index) => (
-            <TeamMember 
-              key={index} 
-              member={member} 
-              onNameClick={() => setSelectedMember(member)} 
+            <TeamMember
+              key={index}
+              member={member}
+              onNameClick={() => setSelectedMember(member)}
             />
           ))}
         </div>
@@ -57,12 +57,12 @@ export default function About() {
       {/* Beautiful Modal for Description */}
       {selectedMember && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-          <div 
+          <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-pointer"
             onClick={() => setSelectedMember(null)}
           ></div>
           <div className="relative bg-darkBg border border-accentBlue/30 shadow-[0_0_50px_rgba(0,240,255,0.15)] rounded-3xl p-8 max-w-lg w-full transform transition-all animate-in zoom-in-95 duration-300">
-            <button 
+            <button
               onClick={() => setSelectedMember(null)}
               className="absolute top-4 right-4 p-2 text-textMuted hover:text-white hover:bg-white/10 rounded-full transition-colors"
             >
@@ -94,7 +94,7 @@ function TeamMember({ member, onNameClick }) {
         <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
         <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full"></div>
       </div>
-      <button 
+      <button
         onClick={onNameClick}
         className="text-xl font-bold text-white mb-2 hover:text-accentBlue transition-colors focus:outline-none relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accentBlue after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
         title="Click to read description"
