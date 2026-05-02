@@ -25,16 +25,27 @@ function Navigation() {
               </span>
             </Link>
           </div>
-          <div className="hidden md:flex space-x-4 items-center">
-            <NavLink to="/">Home</NavLink>
-            {location.pathname === '/dashboard' || location.pathname === '/settings' ? (
-              <NavLink to="/login">Logout</NavLink>
-            ) : (
-              <NavLink to="/login">Honeypot Login</NavLink>
-            )}
-            <NavLink to="/dashboard">Dashboard</NavLink>
-            <NavLink to="/features">Features</NavLink>
-            <NavLink to="/about">About Team</NavLink>
+          <div className="flex items-center gap-4">
+            <div className="hidden md:flex space-x-4 items-center">
+              <NavLink to="/">Home</NavLink>
+              {location.pathname === '/dashboard' || location.pathname === '/settings' ? (
+                <NavLink to="/login">Logout</NavLink>
+              ) : (
+                <NavLink to="/login">Honeypot Login</NavLink>
+              )}
+              <NavLink to="/dashboard">Dashboard</NavLink>
+              <NavLink to="/features">Features</NavLink>
+              <NavLink to="/about">About Team</NavLink>
+            </div>
+            
+            {/* Mobile-only quick actions */}
+            <div className="md:hidden flex items-center">
+              {(location.pathname === '/dashboard' || location.pathname === '/settings') && (
+                <Link to="/login" className="text-xs font-bold text-alertRed border border-alertRed/30 bg-alertRed/10 px-3 py-1.5 rounded-md">
+                  Logout
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </div>
