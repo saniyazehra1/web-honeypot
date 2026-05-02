@@ -9,7 +9,7 @@ export default function About() {
       name: "Saniya Zehra",
       role: "Lead Developer",
       image: "./saniya.png",
-      description: "Saniya is the visionary and main developer behind the Synergy AI Portal. As the lead architect, she single-handedly engineered 99% of the platform, building everything from the intricate backend honeypot logic to the stunning frontend UI. Her unparalleled dedication and expertise brought this entire project to life."
+      description: "Saniya is the lead architect and primary engineer behind the Synergy AI Portal. As the driving force of the project, she single-handedly built the platform’s entire ecosystem—from the complex backend honeypot logic to the seamless, high-end frontend UI. Her unmatched technical grind and vision are quite literally the reason this project exists. Every line of code and every design choice reflects her dedication to bringing this portal to life."
     },
     {
       name: "Nidhi",
