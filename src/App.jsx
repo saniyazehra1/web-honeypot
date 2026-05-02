@@ -33,7 +33,6 @@ function Navigation() {
               ) : (
                 <NavLink to="/login">Honeypot Login</NavLink>
               )}
-              <NavLink to="/dashboard">Dashboard</NavLink>
               <NavLink to="/features">Features</NavLink>
               <NavLink to="/about">About Team</NavLink>
             </div>
