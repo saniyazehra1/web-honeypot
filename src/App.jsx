@@ -27,7 +27,12 @@ function Navigation() {
           </div>
           <div className="hidden md:flex space-x-4 items-center">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/login">Honeypot Login</NavLink>
+            {location.pathname === '/dashboard' || location.pathname === '/settings' ? (
+              <NavLink to="/login">Logout</NavLink>
+            ) : (
+              <NavLink to="/login">Honeypot Login</NavLink>
+            )}
+            <NavLink to="/dashboard">Dashboard</NavLink>
             <NavLink to="/features">Features</NavLink>
             <NavLink to="/about">About Team</NavLink>
           </div>

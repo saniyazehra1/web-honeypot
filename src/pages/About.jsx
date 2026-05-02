@@ -15,10 +15,10 @@ export default function About() {
       {/* Team Members Grid with descriptions */}
       <div className="w-full max-w-5xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <TeamMember name="Saniya Zehra" role="Lead Developer" image="/saniya.png" />
-          <TeamMember name="Nidhi" role="Assistant Developer" image="/nidhi.png" />
-          <TeamMember name="Shradha" role="Security Tester" image="/shradha.png" />
-          <TeamMember name="Pooja" role="Quality Analyst" image="/pooja.png" />
+          <TeamMember name="Saniya Zehra" role="Lead Developer" image="./saniya.png" />
+          <TeamMember name="Nidhi" role="Assistant Developer" image="./nidhi.png" />
+          <TeamMember name="Shradha" role="Security Tester" image="./shradha.png" />
+          <TeamMember name="Pooja" role="Quality Analyst" image="./pooja.png" />
         </div>
       </div>
 

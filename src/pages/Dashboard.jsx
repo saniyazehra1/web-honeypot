@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, ShieldAlert, Thermometer, Gauge, Zap, Database, Filter, Settings, User } from 'lucide-react';
+import { Activity, ShieldAlert, Thermometer, Gauge, Zap, Database, Filter, Settings, User, LogOut } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Dashboard() {
@@ -41,7 +41,7 @@ export default function Dashboard() {
       <div className="absolute top-[20%] left-[20%] w-[40%] h-[40%] bg-purple-500/5 blur-[120px] rounded-full pointer-events-none" />
 
       {/* Sidebar Navigation */}
-      <aside className="w-16 md:w-20 border-r border-panelBorder bg-darkBg flex flex-col items-center py-6 gap-6 z-20 shrink-0">
+      <aside className="w-16 md:w-20 border-r border-panelBorder bg-darkBg flex flex-col items-center py-6 gap-6 z-20 shrink-0 h-full">
         <button
           className="p-3 rounded-xl transition-all bg-accentBlue/20 text-accentBlue border border-accentBlue/30 shadow-[0_0_15px_rgba(0,240,255,0.2)]"
           title="Live Logs"
@@ -55,6 +55,15 @@ export default function Dashboard() {
         >
           <Settings className="w-6 h-6" />
         </Link>
+        <div className="mt-auto">
+          <Link
+            to="/login"
+            className="p-3 rounded-xl transition-all text-alertRed/70 hover:text-alertRed hover:bg-alertRed/10 block mb-2"
+            title="Logout"
+          >
+            <LogOut className="w-6 h-6" />
+          </Link>
+        </div>
       </aside>
 
       {/* Secondary Sidebar (Widgets) */}
